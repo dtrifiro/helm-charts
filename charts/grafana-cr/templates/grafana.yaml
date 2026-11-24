@@ -7,6 +7,9 @@ metadata:
     app: grafana
   {{- include "grafana-cr.labels" . | nindent 4 }}
 spec:
+  {{- if .Values.version }}
+  version: {{ .Values.version | quote }}
+  {{- end }}
   route:
     spec:
       port:

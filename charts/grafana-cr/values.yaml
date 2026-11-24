@@ -2,6 +2,9 @@ sessionSecret: "112RXXaWl7wUQiSdXUMrUya7kN5gOZmHc0s202bKqAw"
 basicAuthUsername: "admin"
 basicAuthPassword: "password"
 
+# Pin the Grafana version deployed by the operator. When empty, the operator's built-in default applies
+version: ""
+
 logLevel: "warn"
 
 oauthProxy:
